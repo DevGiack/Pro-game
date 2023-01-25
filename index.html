@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>The Hyper Progame</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <div class="container">
+          <h1 id="title"><a href="#pagelist">The Hyper Progame</a></h1>
+        </div>
+      </div>
+      <div class="search-container">
+        <form
+          action=""
+          onsubmit="location.hash = '#pagelist/' + this.s.value; return false;"
+        >
+          <button type="submit">
+            <img src="./src/asset/images/search.svg" />
+          </button>
+          <input type="text" placeholder="Find a game..." name="s" />
+        </form>
+      </div>
+    </div>
+    <div id="second-title">
+      <h2>Welcome,</h2>
+    </div>
+    <div id="text-welcome">
+      <p>
+        The Hyper Programe is the world's premier event for computer and video
+        games and related products. At The Hyper Programe, the video game
+        industry's top talent pack the Los Angeles Convention Center, connecting
+        tens of thousands of the best, brightest, and most innovative in the
+        interactive entertainment industry like me. For three exciting days,
+        leading-edge companies, groundbreaking new technologies, and
+        never-before-seen products will be showcased. The Hyper Programe
+        connects you with both new and existing partners, industry executives,
+        gamers ans social influencers providing unprecedented exposure.
+      </p>
+    </div>
+    <section id="pageContent"></section>
+    <div id="red"></div>
+    <div class="footer">
+      <p>Jaccomo De Grégorio @ 2023 - Fictionnal website of exercice</p>
+    </div>
+    <script type="module" src="src/js/main.js"></script>
+  </body>
+</html>

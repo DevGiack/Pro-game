@@ -1,0 +1,321 @@
+// COLORS
+$color-back : #060505;
+$color-title:  #bf320d;
+$color-text: #ffffff;
+
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&family=Roboto:wght@400;500;700&family=Unbounded:wght@300;400&display=swap');
+
+//STYLE 
+body{
+    background: $color-back;
+    color: $color-text;
+    font-family: Roboto;
+    font-weight: 400;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+//Header Start
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+    color: $color-title;
+    font-weight: 700;
+    font-size: 3em;
+}
+
+#second-title{
+    font-size: 1.3em;
+}
+
+// Search bar Start
+
+.search-container {
+    width: 281px;
+    height: 41px;
+    border-radius: 20px;
+    border: 1px solid $color-text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color-back;
+}
+
+.search-container img {
+    height: 20px;
+    width: 20px;
+    margin-top: 3px;
+    padding-right:  8px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input{
+    box-sizing: border-box;
+    color: $color-text;
+    font-size: medium;
+    border: none;
+    background-color: transparent;
+}
+
+input:focus{
+    outline:  none;
+}
+
+button {
+    background : transparent;
+    border: none;
+}
+
+// Search Bar End
+
+// Header End
+
+// Link Start
+
+a{
+    text-decoration: none;
+    color: $color-text;
+}
+
+a, a:visited {
+    color: inherit;
+}
+
+#title a, a:visited {
+    text-decoration: none;
+	position: relative;
+    color: inherit;
+	
+	&:after {
+		content: '';
+		height: 3px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0%;
+		background: $color-title;
+		transition: 0.35s;
+	}
+
+	&:hover:after {
+		width: 100%;
+	}
+	
+	&.block {
+		display: block;
+		padding: 0.5em;
+		
+		&:hover {
+			background: $color-text;
+		}
+	}
+}
+
+// Link End
+
+#text-welcome p{
+    font-weight: 500;
+    font-size: 1em;
+   letter-spacing: 1px;
+}
+
+#pageContent{
+      width: 100%;
+}
+
+.articles{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.cardGame{
+    width:  400px;
+    margin: 50px;
+}
+
+.single-image {
+    position: relative;
+
+}
+
+.image{
+    width:  100%;
+    height: 225px;
+    display: block;
+}
+
+.img-overlay{
+    position: absolute;
+    background-color: $color-back;
+    opacity: 0.8;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.text-overlay{
+ position: absolute;
+ top: 50%;
+ left:35%;
+ transform: translate(-50%, -50%);
+ text-align: left;
+ font-weight: 500;
+}
+
+.over-tag{
+    font-size: 0.65em;
+}
+
+.date-rate{
+    font-size: 1.2em;
+}
+
+.single-image:hover .img-overlay{
+    height: 100%;
+}
+
+.articles h1{
+    font-size: 1.5em;
+    margin-left: 10px;
+    margin-top: 13px;
+    margin-bottom: 0px;
+}
+
+.icon-container{
+    display: flex;
+    margin-left: 10px;
+}
+
+.icon-container img{
+    margin-right: 15px;
+}
+
+// -------------------------------------------
+
+
+.title-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+}
+
+.page-detail .title{
+    color: $color-text;
+    font-size: 2em;
+}
+
+.page-detail .rating{
+    color: $color-title;
+    font-size: 1.35em;
+    font-weight: 400;
+}
+
+.page-detail .description{
+    font-weight: 500;
+    font-size: 1em;
+   letter-spacing: 1px;
+}
+
+.rdpp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.marge{
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.marg {
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+.release {
+    margin-right: 15px;
+}
+
+.developer {
+    margin-right: 15px;
+}
+
+.plat {
+    margin-right: 15px;
+}
+
+.publi {
+    margin-right: 15px;
+}
+
+.genre-tag {
+    display: flex;
+    justify-content: space-between;
+}
+
+.genre {
+    margin-right: 150px;
+}
+
+.store {
+    font-size: 1.2em;
+}
+
+.stores h1{
+    color: $color-title;
+    font-size: 2em;
+}
+
+.back {
+    position: relative;
+    width: 100%;
+    height: 420px;
+}
+
+.background-image{
+    position: absolute;
+    width: 130%; 
+    margin-top: 10px;
+    left: -15%;
+    right: -15%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+} 
+
+.btn {
+    position: absolute;
+    background-color: $color-title;
+    color:$color-text;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 15px;
+    height: 50px;
+    width: 250px;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-align: start;
+}
+
+#red {
+    background-color: $color-title;
+    height: 10px;
+    width: 139px;
+
+}
